@@ -13,7 +13,7 @@ defmodule TwScreenSize.MixProject do
       deps: deps(),
       docs: docs(),
       description: """
-      A tiny, one-component package for LiveView to elevate your Tailwind design iteration experience. Originally implemented by Shayan Taslim in React.
+      A tiny, one-component package for LiveView x Tailwind to elevate your design iteration experience. Originally implemented by Shayan Taslim in React.
       """
     ]
   end

@@ -1,6 +1,6 @@
 defmodule TwScreenSize do
   @moduledoc """
-  Documentation for `TwScreenSize`. A tiny, one-component package for LiveView to elevate your Tailwind design iteration experience.
+  Documentation for `TwScreenSize`. A tiny, one-component package for LiveView x Tailwind to elevate your design iteration experience.
   """
   use Phoenix.Component
 

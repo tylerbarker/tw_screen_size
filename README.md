@@ -4,10 +4,6 @@
 
 A tiny, one-component package for LiveView to elevate your Tailwind design iteration experience. Originally implemented by [Shayan Taslim](https://github.com/Sh4yy) in React (see [Gist](https://gist.github.com/Sh4yy/0300299ae60af4910bcb341703946330)).
 
-## Demo
-
-![resizeDemo](https://pub-0bd602de4141434f899c6f284446e48a.r2.dev/betterDemo.gif)
-
 ## Installation
 
 Prerequisites: Your LiveView application must already be using TailwindCSS.

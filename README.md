@@ -63,10 +63,7 @@ end
 <!-- ... -->
 <body class="antialiased bg-white">
   <%= @inner_content %>
-  <!--
-  If you're deploying with Releases, Mix.env will be unavailable in production. In this case, set and detect the environment using application config. E.g. `Application.compile_env(:my_app, :env) == :dev`
-  -->
-  <.tw_screen_size :if={Mix.env() == :dev} />
+  <.tw_screen_size :if={Application.get_env(:my_app, :dev_routes)} />
 </body>
 ```
 

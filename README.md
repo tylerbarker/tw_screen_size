@@ -46,7 +46,14 @@ let liveSocket = new LiveSocket("/live", Socket, {
 });
 ```
 
-4. Import TwScreenSize and add the `<.tw_screen_size />` component to your root layout:
+4. Extend your `dev.exs` configuration to enable the component in development only:
+
+```elixir
+# dev.exs
+config :my_app, tw_screen_size: true
+```
+
+5. Import TwScreenSize, and add the component to your root layout:
 
 ```elixir
 # layouts.ex
@@ -58,24 +65,24 @@ defmodule MyAppWeb.Layouts do
 end
 ```
 
-```eex
+```heex
 <!-- root.html.heex -->
 <!-- ... -->
 <body class="antialiased bg-white">
   <%= @inner_content %>
-  <!--
-  If you're deploying with Releases, Mix.env will be unavailable in production. In this case, set and detect the environment using application config. E.g. `Application.compile_env(:my_app, :env) == :dev`
-  -->
-  <.tw_screen_size :if={Mix.env() == :dev} />
+  <.tw_screen_size :if={Application.get_env(:my_app, :tw_screen_size)} />
 </body>
 ```
 
 ## Opacity Timeout
 
-The component is always visible by default. If you'd prefer the component to appear temporarily on the first page-load, and on screen resizes, you can set the `opacity_timeout` attribute:
+The component is always visible by default. If you'd prefer it to appear temporarily on the first page-load, and on screen resizes, you can set the `:opacity_timeout` attribute:
 
 ```elixir
-<.tw_screen_size opacity_timeout={3000} />
+<.tw_screen_size
+  :if={Application.get_env(:my_app, :tw_screen_size)}
+  opacity_timeout={3000}
+/>
 ```
 
 ## All Attributes

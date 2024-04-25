@@ -21,12 +21,10 @@ end
 2. Ensure Tailwind searches for styles in the `tw_screen_size` package:
 
 ```js
-// tailwind.config.js
+// assets/tailwind.config.js
 module.exports = {
   content: [
-    //
-    "../deps/tw_screen_size/lib/**/*.*ex", // <--- Add this line
-    "../deps/tw_screen_size/assets/js/*.*js", // <--- And this one
+    "../deps/tw_screen_size/**/*.{ex,js}", // <--- Add this line
   ],
   ...
 }
@@ -35,7 +33,7 @@ module.exports = {
 3. Import and integrate the `TwScreenSizeHook` in your `app.js`:
 
 ```js
-// app.js
+// assets/app.js
 
 // import the hook
 import { TwScreenSizeHook } from "../../deps/tw_screen_size/assets/js/hooks";

@@ -1,7 +1,7 @@
 defmodule TwScreenSize.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "1.0.0"
 
   def project do
     [
@@ -13,7 +13,7 @@ defmodule TwScreenSize.MixProject do
       deps: deps(),
       docs: docs(),
       description: """
-      A tiny, one-component package for LiveView x Tailwind to elevate your design iteration experience. Originally implemented by Shayan Taslim in React.
+      A tiny LiveView widget showing the current screen dimensions and Tailwind breakpoint.
       """
     ]
   end

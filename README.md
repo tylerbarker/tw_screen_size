@@ -1,10 +1,8 @@
 # TwScreenSize
 
-![originalTweetImage](https://pub-0bd602de4141434f899c6f284446e48a.r2.dev/tw_screen_size_tweet_img.jpeg)
+![tw_screen_size_gif](https://pub-0bd602de4141434f899c6f284446e48a.r2.dev/twScreenSize.gif)
 
-A tiny, one-component package for LiveView x Tailwind to elevate your design iteration experience with a widget displaying the current screen dimensions and breakpoint.
-
-Originally implemented by [Shayan Taslim](https://github.com/Sh4yy) in React (see [Gist](https://gist.github.com/Sh4yy/0300299ae60af4910bcb341703946330)).
+A tiny LiveView widget showing the current screen dimensions and Tailwind breakpoint. Ported from [Shayan Taslim](https://github.com/Sh4yy)'s React implementation (see [Gist](https://gist.github.com/Sh4yy/0300299ae60af4910bcb341703946330)).
 
 ## Installation
 
@@ -15,7 +13,7 @@ Prerequisites: Your LiveView application must already be using TailwindCSS.
 ```elixir
 def deps do
   [
-    {:tw_screen_size, "~> 0.1.0"}
+    {:tw_screen_size, "~> 1.0.0"}
   ]
 end
 ```

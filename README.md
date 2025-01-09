@@ -13,7 +13,7 @@ Prerequisites: Your LiveView application must already be using TailwindCSS.
 ```elixir
 def deps do
   [
-    {:tw_screen_size, "~> 1.0.0"}
+    {:tw_screen_size, "~> 1.1.0"}
   ]
 end
 ```

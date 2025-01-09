@@ -1,7 +1,7 @@
 defmodule TwScreenSize.MixProject do
   use Mix.Project
 
-  @version "1.0.0"
+  @version "1.1.0"
 
   def project do
     [
@@ -29,7 +29,7 @@ defmodule TwScreenSize.MixProject do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
-      {:phoenix_live_view, "~> 0.19"}
+      {:phoenix_live_view, ">= 0.19.0"}
     ]
   end
 
